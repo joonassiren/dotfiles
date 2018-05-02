@@ -167,3 +167,8 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[user]
+	name = Joonas Sirén
+	email = j.siren@accenture.com
+[credential]
+	helper = osxkeychain
