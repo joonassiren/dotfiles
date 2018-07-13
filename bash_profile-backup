@@ -3,13 +3,10 @@ export PATH="$HOME/bin:$PATH";
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-# add extra for any given functions you don't want to commit, and add it below
-# {bash_prompt,exports,path,aliases,functions,extra}
-for file in ~/.{bash_prompt,exports,path,aliases,functions}; do
+for file in ~/.{bash_prompt,exports,path,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
-echo "sourcing files from ~/.{bash_prompt,exports,path,aliases,functions}"
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
@@ -57,9 +54,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# NodeEnv settings
-if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
-
 # RBEnv settings
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
@@ -69,7 +63,10 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # JEnv settings
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
+# NodEnv settings
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+
 # DVM settings
 [[ -s "$(brew --prefix dvm)/dvm.sh" ]] && source "$(brew --prefix dvm)/dvm.sh"
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
