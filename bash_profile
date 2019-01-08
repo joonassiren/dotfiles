@@ -67,6 +67,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # JEnv settings
+export JENV_ROOT=/usr/local/opt/jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 # DVM settings
