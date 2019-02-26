@@ -69,6 +69,8 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # JEnv settings
 export JENV_ROOT=/usr/local/opt/jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+jenv enable-plugin maven && jenv enable-plugin export
+
 
 # DVM settings
 [[ -s "$(brew --prefix dvm)/dvm.sh" ]] && source "$(brew --prefix dvm)/dvm.sh"
