@@ -169,6 +169,6 @@
 	insteadOf = "gist:"
 [user]
 	name = Joonas Sirén
-	email = j.siren@accenture.com
+	email = joonas.siren@paf.com
 [credential]
 	helper = osxkeychain

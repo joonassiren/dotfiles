@@ -24,6 +24,8 @@ alias reload="exec $SHELL -l"
 # List docker-machine instances
 alias docks="docker-machine ls"
 
+#Alias goto git-projects folder
+alias gitrepos="cd ~/Documents/PAF/git-repos"
 # Aliases for Docker listings
 alias docl=~/Projects/scripts/docker-container-list
 alias doil=~/Projects/scripts/docker-image-list

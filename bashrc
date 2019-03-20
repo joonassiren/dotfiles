@@ -6,3 +6,7 @@
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [ -f $HOME/.config/yarn/global/node_modules/tabtab/.completions/sls.bash ] && . $HOME/.config/yarn/global/node_modules/tabtab/.completions/sls.bash
+
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[ -f /Users/joosir/.config/yarn/global/node_modules/tabtab/.completions/slss.bash ] && . /Users/joosir/.config/yarn/global/node_modules/tabtab/.completions/slss.bash
