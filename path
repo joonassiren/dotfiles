@@ -1,1 +1,2 @@
-export PATH="/usr/local/bin:$HOME/.node/bin:$GOPATH/bin:$PATH"
+export PATH="$HOME/Documents/PAF/git-repos/infra-and-tools/aws-related/ccoe-toolset/terraform/current:$PATH"
+#export PATH="$HOME/bin:$HOME/.jenv/bin:/usr/local/bin:$HOME/.node/bin:$GOPATH/bin:"

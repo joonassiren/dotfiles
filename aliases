@@ -26,6 +26,18 @@ alias docks="docker-machine ls"
 
 #Alias goto git-projects folder
 alias gitrepos="cd ~/Documents/PAF/git-repos"
+
+#Alias for terragrunt (use the dedicated version)
+alias terragrunt=~/Documents/PAF/git-repos/infra-and-tools/aws-related/ccoe-toolset/terragrunt/current/./terragrunt
+
+# Alias for terraform version 0.12
+alias t-12=~/Documents/PAF/git-repos/compliance/compliance-aws-dev-infra/bin/./terraform-0.12
+
+#Aliases for PAF AWS logins
+alias login-prod=". ~/.paf/login-prod.sh"
+alias login-ci=". ~/.paf/login-ci.sh"
+alias login-stg=". ~/.paf/login-stg.sh"
+
 # Aliases for Docker listings
 alias docl=~/Projects/scripts/docker-container-list
 alias doil=~/Projects/scripts/docker-image-list
