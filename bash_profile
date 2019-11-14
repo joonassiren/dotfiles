@@ -3,11 +3,11 @@
 # * ~/.extra can be used for other settings you don’t want to commit.
 # add extra for any given functions you don't want to commit, and add it below
 # {bash_prompt,exports,path,aliases,functions,extra}
-for file in ~/.{bash_prompt,exports,path,aliases,functions}; do
+for file in ~/.{bash_prompt,exports,path,aliases,functions,.extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
-echo "sourcing files from ~/.{bash_prompt,exports,path,aliases,functions}"
+echo "sourcing files from ~/.{bash_prompt,exports,path,aliases,functions, .extra}"
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
