@@ -1,3 +1,6 @@
+#bash-completion@2 fix
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -8,6 +11,8 @@ for file in ~/.{bash_prompt,exports,path,aliases,functions,.extra}; do
 done;
 unset file;
 echo "sourcing files from ~/.{bash_prompt,exports,path,aliases,functions, .extra}"
+
+
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
