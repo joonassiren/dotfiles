@@ -14,8 +14,7 @@ Stolen from [Ilkka's blog](http://sirile.github.io/2015/01/26/setting-up-mac.htm
 git clone https://github.com/joonassiren/dotfiles.git ~/.dotfiles
 
 ## run brew
-cd .dotfiles
-brew bundle
+cd .dotfiles && brew bundle
 
 ## Run RCM
 rcup rcrc
