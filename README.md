@@ -10,7 +10,7 @@ Stolen from [Ilkka's blog](http://sirile.github.io/2015/01/26/setting-up-mac.htm
 ## Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-Clone dotfiles
+## Clone dotfiles
 git clone https://github.com/joonassiren/dotfiles.git ~/.dotfiles
 
 ## run brew
