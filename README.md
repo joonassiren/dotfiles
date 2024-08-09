@@ -34,7 +34,7 @@ curl -L https://www.npmjs.org/install.sh | sh
 Add a ~/.extra to contain non-github stuff
 
 # Git credentials
-# Not in the repository, to prevent people from accidentally committing under my name
+Not in the repository, to prevent people from accidentally committing under my name
 GIT_AUTHOR_NAME="Joonas Sirén"
 
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
