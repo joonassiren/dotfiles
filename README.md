@@ -17,7 +17,8 @@ git clone https://github.com/joonassiren/dotfiles.git ~/.dotfiles
 cd .dotfiles && brew bundle
 
 ## Run RCM
-rcup rcrc && rcup -f
+rcup rcrc 
+rcup -f
 
 ## Make GNU bash default shell
 echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
@@ -26,6 +27,7 @@ chsh -s /usr/local/bin/bash
 ## Install NPM as non-root
 echo prefix=~/.node >> ~/.npmrc
 curl -L https://www.npmjs.org/install.sh | sh
+
 Add a ~/.extra to contain non-github stuff
 
 # Git credentials
