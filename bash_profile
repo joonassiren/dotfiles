@@ -69,13 +69,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # PYEnv settings
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
-export JENV_ROOT=/usr/local/opt/jenv
-# JEnv settings
-export JENV_ROOT=/usr/local/opt/jenv
-if which jenv > /dev/null; then eval "$(jenv init -)"; fi
-#enable jenv maven plugin so Maven will adhere to local java version
-jenv enable-plugin maven && jenv enable-plugin export
-
 # DVM settings
 [[ -s "$(brew --prefix dvm)/dvm.sh" ]] && source "$(brew --prefix dvm)/dvm.sh"
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
